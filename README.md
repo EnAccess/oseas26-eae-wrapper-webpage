@@ -1,0 +1,94 @@
+<p align="center">
+  <a href="https://github.com/EnAccess/oseas26-eae-wrapper-webpage">
+    <img
+      src="https://drive.google.com/uc?id=1gtL_p7l3HbOcCzc09A7KW5d7B5qn-BDs"
+      alt="A wrapper webpage for EAE's Analysis"
+      width="640"
+    >
+  </a>
+</p>
+<p align="center">
+    October 26-27 | Open Source in Energy Access Symposium Hackathon | Kigali, Rwanda
+</p>
+
+---
+
+# A wrapper webpage for EAE's Analysis
+
+A basic webpage that embeds the
+[Energy Access Explorer (EAE)](https://www.energyaccessexplorer.org) analysis in
+an interactive, preconfigured map window.
+
+## Abstract and goal
+
+A basic webpage should be developed with the Energy Access Explorer (EAE)
+platform embedded within a map window, similar to a Leaflet-based
+implementation. The webpage design and layout can be adapted from the template
+used on <https://nagalandgis.in/> and integrated as an additional page within the
+existing website.
+
+The embedded EAE map should be configured with an appropriate default zoom level
+and responsive sizing to ensure optimal viewing and usability across both desktop
+and mobile devices. When the page loads, the left and right side panels of EAE
+should be collapsed by default to maximize the visible map area.
+
+The webpage should provide user controls for selecting two key parameters that
+are linked to the embedded EAE platform:
+
+- Administrative boundary hierarchy
+- Crop names
+
+Based on the user's selections, the webpage should enable users to automatically
+zoom to the selected administrative boundary and visualize or highlight areas
+identified as suitable for growing the selected crop. The required administrative
+boundary layers will be preloaded within the EAE platform, and a set of mock crop
+suitability analyses will be provided to support the development and testing of
+the webpage functionality.
+
+## Expected outcomes
+
+- An iframe which allows users to have an interactive map of the pre-selected
+  data embedded on an HTML page. It will render the map with your exact dataset
+  combinations and legend.
+- A live mirror of EAE where the map remains fully interactive. This means
+  visitors to the wrapper website will still be able to move sliders around or
+  zoom in and out if they choose to explore the data further.
+
+## Required knowledge
+
+### Stack
+
+- iframe-based implementation.
+- Embedded EAE map with preset data and configuration in a wrapper webpage.
+
+EAE is written in plain/modern JavaScript (ECMAScript 2020). There is no
+framework; instead a traditional C-style programming pattern is enforced. The
+directories contain:
+
+- `src`: JavaScript code
+- `stylesheets`: CSS code
+- `views`: HTML documents
+- `bin`: scripts and executables
+
+### Helpful experiences
+
+- Experience in UI/UX.
+- Experience with iframe.
+- Familiarity with web mapping and UI tools.
+
+## Person of contact supporting this challenge
+
+- Akansha Saklani
+- Abdul Khalid
+
+## Getting started
+
+- Join the OSEAS Discord server: <https://community.oseas.org/>
+- Introduce yourself in the `#introductions` channel and join the relevant
+  channels for this challenge.
+- For physical participants: bring a computer (and required adapters) for some
+  hacking.
+- Read the documentation:
+  - [Energy Access Explorer](https://www.energyaccessexplorer.org)
+  - [EAE GitHub](https://github.com/energyaccessexplorer)
+  - [EAE Technical Note](https://www.wri.org/research/energy-access-explorer-data-and-methods?ap3c=IGaj6AgspJqgeKwBAGaj6AgmzCZ5Iv70Fr7H6ahniwtFr1FOgg)
